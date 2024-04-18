@@ -5,6 +5,9 @@ import { updateMetadataAccountV2 } from '@metaplex-foundation/mpl-token-metadata
     const newTokenMetadata = {
         name: "Lazy Cat",
         symbol: "LAZYCAT",
-        uri: "https://github.com/JJymUp/solana-scripts/blob/main/token.json",
+        uri: "https://www.hostize.com/d/kC3VEWEsQC/file.json",
     };
+
+
+
 })()
