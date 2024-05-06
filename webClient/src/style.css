@@ -1,0 +1,127 @@
+/* @font-face {
+  font-family: 'Avenir';
+  src: url('./assets/fonts/Arial.ttf') format('truetype');
+} */
+/* @import url('./assets/fonts/iconfont.css'); */
+@import url("//at.alicdn.com/t/c/font_3740027_5vhltwpvmep.css");
+
+html,
+body,
+div,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+dl,
+dt,
+dd,
+table,
+tr,
+td,
+th,
+tbody,
+thead,
+span,
+i,
+a,
+input,
+button,
+textarea {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+}
+body {
+    overflow-x: hidden !important;
+    background-color: #090809;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+}
+body::-webkit-scrollbar {
+    width: 8px;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.349);
+}
+img {
+    vertical-align: middle;
+}
+a {
+    text-decoration: none;
+}
+textarea {
+    resize: none;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flex-vertical-center {
+    display: flex;
+    align-items: center;
+}
+.flex-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.relative {
+    position: relative;
+}
+.text-center {
+    text-align: center;
+}
+.text-right {
+    text-align: right !important;
+}
+.text-left {
+    text-align: left;
+}
+.pointer {
+    cursor: pointer;
+}
+.m-top16 {
+    margin-top: 16px;
+}
+.m-bottom16 {
+    margin-bottom: 16px;
+}
+.m-top8 {
+    margin-top: 8px;
+}
+.m-bottom8 {
+    margin-bottom: 8px;
+}
+.wh100 {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* // 屏幕宽度介于750px和1400px之间 */
+@media screen and (min-width: 750px) and (max-width: 1400px) {
+    .wrap {
+        width: 1072px;
+        margin: 0 auto;
+    }
+}
+
+/* // 宽度大于1401px */
+@media screen and (min-width: 1401px) {
+    .wrap {
+        width: 1280px;
+        margin: 0 auto;
+    }
+}

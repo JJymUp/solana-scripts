@@ -1,5 +1,5 @@
 
-import { Keypair, LAMPORTS_PER_SOL, SystemProgram, TransactionMessage, VersionedTransaction } from '@solana/web3.js';
+import { Keypair, LAMPORTS_PER_SOL, PublicKey, SystemProgram, TransactionMessage, VersionedTransaction } from '@solana/web3.js';
 import { payer, connection, STATIC_PUBLICKEY, explorerURL } from "../libs/helper";
 
 (async () => {
@@ -23,6 +23,7 @@ import { payer, connection, STATIC_PUBLICKEY, explorerURL } from "../libs/helper
 
     console.log('rent lamports: ', lamports);
 
+    const a = new PublicKey("6xidCvepboWenAafuqUWSn3irxdAcK1z8dVcdjRxk36f");
     // 创建指令
     const createAccountIx = SystemProgram.createAccount({
         // 需要签署交易的帐户
@@ -31,7 +32,7 @@ import { payer, connection, STATIC_PUBLICKEY, explorerURL } from "../libs/helper
         newAccountPubkey: keypair.publicKey,
         lamports,
         space,
-        programId: SystemProgram.programId
+        programId: a
     })
 
     // 获取最新的区块哈希值
